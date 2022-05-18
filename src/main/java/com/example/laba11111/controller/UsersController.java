@@ -31,7 +31,7 @@ public class UsersController {
 
     @GetMapping("/findByLogin")
     public UsersDto findByLogin(@RequestParam String login) {
-        log.info("Поиска по запросу на login: " + login);
+        log.info("Обработка поиска по запросу на login: " + login);
         return usersService.findByLogin(login);
     }
 
